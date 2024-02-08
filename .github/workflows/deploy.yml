@@ -24,7 +24,10 @@ jobs:
           pip install folium
 
       - name: Build the map
-        run: python create_map.py
+        run: |
+          ls
+          python create_map.py
+          ls
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
